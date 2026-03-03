@@ -1,0 +1,14 @@
+{
+  "last_successful_run": "2026-03-03",
+  "saved_paths": [
+    {
+      "target": "Domain_Root",
+      "path": ["192.168.1.1", "192.168.1.15", "192.168.1.50"],
+      "accumulated_creds": ["user_hash", "admin_ticket"]
+    }
+  ],
+  "active_mission": {
+    "current_depth": 3,
+    "current_node": "192.168.1.50"
+  }
+}

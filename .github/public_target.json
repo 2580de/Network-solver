@@ -1,0 +1,26 @@
+{
+  "project_meta": {
+    "scope": "Public_Cloud_Audit",
+    "goal": "data_exfiltration"
+  },
+  "targets": {
+    "https://api.example.com": {
+      "type": "API_Endpoint",
+      "vulnerability": "Broken_Authentication",
+      "requires": "none",
+      "provides": "api_key"
+    },
+    "https://example.com/login": {
+      "type": "Web_Form",
+      "vulnerability": "SQL_Injection",
+      "requires": "api_key",
+      "provides": "session_cookie"
+    },
+    "https://example.com/admin": {
+      "type": "Restricted_Panel",
+      "vulnerability": "Insecure_Direct_Object_Reference",
+      "requires": "session_cookie",
+      "provides": "data_exfiltration"
+    }
+  }
+}
